@@ -9,8 +9,8 @@ from config import *
  
 camL, camR = start_cameras()
  
-detector_objects = YOLODetector("models/yolov5n.onnx",        "coco.names")
-detector_stairs  = YOLODetector("models/yolov5n_stairs.onnx", "stairs.names")
+detector_objects = YOLODetector("models/yolov5n.onnx",        "models/coco.names")
+detector_stairs  = YOLODetector("models/yolov5n_stairs.onnx", "models/stairs.names")
 stereo           = StereoDepth("calibration/stereo_calibration.npz")
  
 MAX_FRAME_COUNT = 210   # LCM(3,5,7) so all skip cycles align cleanly
