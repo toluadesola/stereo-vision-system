@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+ 
+# Virtual environments
+venv/
+.venv/
+env/
+ 
+# Calibration data (regenerate locally, never commit)
+calibration/
+calibration_images/
+ 
+# Model weights (too large for git ? store in releases or LFS)
+models/*.onnx
+ 
+# Logs and output
+*.log
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# IDE
+.vscode/
+.idea/
+*.swp
